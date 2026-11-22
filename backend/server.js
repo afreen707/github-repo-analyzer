@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Initialize Groq instead of Gemini / Claude
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
-const AI_MODEL = "llama-3.3-70b-versatile";
+const AI_MODEL = "openai/gpt-oss-120b";
 
 const github = axios.create({
   baseURL: "https://api.github.com",
